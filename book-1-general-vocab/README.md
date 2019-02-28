@@ -5,7 +5,6 @@
 1. [SQL](./chapters/SQL.md)
 1. [ORM](./chapters/ORM.md)
 1. [API (general description)](./chapters/API.md)
-1. [Method Overloading](./chapters/METHOD-OVERLOADING.md)
 1. [Web App](./chapters/WEB-APP.md)
 1. [REST API](./chapters/REST-API.md)
 1. Web API - TODO
