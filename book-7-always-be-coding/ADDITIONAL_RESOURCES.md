@@ -27,3 +27,6 @@
 1. https://syntax.fm/ - A font-end focused show co-hosted by Wes Bos and Scott Tolinski
 1. https://reactpodcast.com/ - An interview show about all things react hosted by Micheal Jackson, one of the creators of React Router.
 1. https://developers.google.com/web/shows/http203/podcast/ - A fun (and sometimes educational) discussion show about font-end development, hosted by two Google developers.
+
+### Common Interviewing Questions
+[Google doc](https://docs.google.com/document/d/1e-w47mmis3DGbs5drvDkNEFkrVzyiiLx0S42x0XlMFs/edit?usp=sharing)
