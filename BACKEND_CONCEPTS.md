@@ -2,10 +2,7 @@
 
 
 ### Software Development / Computer Science-y Terms
-1. Testing
-1. Integration Testing
-1. Test Driven Development
-1. Unit Testing
+
 1. Internet stuff
 1. Request/Response Cycle
 1. Client Side Validation
@@ -23,18 +20,6 @@
 1. Idempotency
 
 
-# Testing
-
-### Integration Testing
-Tests typically written after the functional code is written. These tests are to ensure that if someone makes any changes to code, your functionality won’t break. For example, if you require certain fields to be completed on a POST and someone were to remove a field, the test would fail, so the developer would know that field is necessary.
-
-### Test Driven Development
-Kind of the reverse of integration testing. You write the test before you write any code working on actual functionality. You typically write the test to fail first, and then work to get it to pass, in small chunks.
-
-### Unit Testing
-Test very small parts of your code - the smallest testable part of your code.
-
----
 
 ### Request / Response cycle
 User requests something from the server through the URL and the server responds with some sort of [response code](https://http.cat/) and/or the stuff the browser needs to render the response. [More reading.](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
@@ -227,11 +212,6 @@ for country in (obj_ind, obj_usa):
 	country.language() 
 ```
 
----
-
-
-
----
 
 ### Composition over Inheritance
 
