@@ -1,0 +1,2 @@
+# Web App
+A web app is a server based app that allows interaction with the database and sends HTML representations to the browser. So a Django/.NET web app not only has models, and views (controller), but a view binds data to an HTML template (view) which is then sent to the browser. 
