@@ -3,10 +3,6 @@
 
 ### Software Development / Computer Science-y Terms
 
-1. Internet stuff
-1. Request/Response Cycle
-1. Client Side Validation
-1. Server Side Validation
 1. Object Oriented Programming
 1. Encapsulation
 1. Abstraction
@@ -21,16 +17,10 @@
 
 
 
-### Request / Response cycle
-User requests something from the server through the URL and the server responds with some sort of [response code](https://http.cat/) and/or the stuff the browser needs to render the response. [More reading.](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
 
-### Client side validation
-You know when you enter in an email and it yells at you till you put the @gmail.com at the end (sometimes even before you’ve submitted the form)? That’s often client side validation - just some javascripty type stuff saying “I am expecting an email address and the user is/isn’t giving me that email I want”. Notice how I said “often” client side validation - sometimes this type of error is also given from a server side validation. 
 
-### Server side validation
-Once the data passes the client side validation, it moves on to interact (`POST`/`DELETE`, etc) with the database. You’ll get a server side validation error if you try to do something to the database that isn’t allowed (based off of the models you create in your Django app). So, if on the model, you said that the max length of a name is 50 characters, and someone enters a name at 55 characters, it will pass the client side, but it will fail on the server side.
 
-![ServerSideValidation](images/server-side-validation.jpg)
+
 
 
 # Software Development General Vocab

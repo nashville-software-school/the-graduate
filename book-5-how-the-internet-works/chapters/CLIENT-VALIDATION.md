@@ -1,0 +1,3 @@
+# Client side validation
+
+You know when you enter in an email and it yells at you till you put the @gmail.com at the end (sometimes even before you’ve submitted the form)? That’s often client side validation - just some javascripty type stuff saying “I am expecting an email address and the user is/isn’t giving me that email I want”. Notice how I said “often” client side validation - sometimes this type of error is also given from a server side validation. 
