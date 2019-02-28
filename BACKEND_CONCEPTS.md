@@ -1,13 +1,7 @@
 # Computer Science & Backend Concepts
 
 ## Definitions included in this document
-### General Vocab - Python and C#
-1. Classes
-1. Model, View, Template / Model, View, Controller
-1. SQL
-1. ORM
-1. API (general description)
-1. Method Overriding
+
 
 ### General Vocab - Python Specific - TODO
 1. Python
@@ -44,20 +38,6 @@
 1. Idempotency
 
 
----
-
-
----
-
----
-
-
----
-
----
-
-
----
 # Testing
 
 ### Integration Testing
@@ -305,19 +285,6 @@ class Customer(models.Model):
     deleted = models.BooleanField(default=False)
 ```
 
----
-
-
-
----
-
-
-
----
-
-
-
----
 
 ### Idempotency
 Basically, watch this [4 minute video](https://www.restapitutorial.com/lessons/idempotency.html) ;)
