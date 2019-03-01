@@ -26,9 +26,11 @@
 1. Now you’re ready to start writing views, templates, and URL paths in your app! See the signal flow below.
 
 `settings.py`
+
 ![settings](../images/settings.png)
 
 Project `urls.py`
+
 ![urls](../images/urls.png)
 
 Signal Flow
