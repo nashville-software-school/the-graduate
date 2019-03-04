@@ -49,7 +49,7 @@ public class Baseball : Ball {
 }
 
 public class Football : Ball {
-    # default shape of 'sphere' is overriden here
+    // default shape of 'sphere' is overriden here
     public override string shape = 'oval';
     public string material = "leather";
 }
