@@ -1,6 +1,8 @@
 # Inheritance
 [Code Example (Python)](https://www.geeksforgeeks.org/inheritance-in-python/)
 
+[Another Python Resource](https://www.digitalocean.com/community/tutorials/understanding-class-inheritance-in-python-3)
+
 [C# Resource](https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/inheritance)
 
 How do we reuse the common logic and extract the unique logic into a separate class? One way to achieve this is inheritance.
@@ -19,30 +21,36 @@ class Ball:
     def __init__(self):
         self.radius = 0
         self.weight = 0
+        self.shape = 'sphere'
 ```
 
-Both Baseball and Soccerball inherit the Ball class and then add their own properties that are specific to the class of Baseball and Soccerball.
+Both Baseball and Football inherit the Ball class and then add their own properties that are specific to the class of Baseball and Football.
 ```python
 class Baseball(Ball):
     def __init__(self):
         self.stitches = 0
 
-class SoccerBall(Ball):
+class Football(Ball):
     def __init__(self):
-        self.panels = 0
+        # default shape of 'sphere' is overriden here
+        self.shape = 'oval'
+        self.material = 'leather'
 ```
 C# version of inheritance:
 ```cs
 public class Ball {
     public int radius = 0;
     public int weight = 0;
+    public string shape = "Sphere";
 }
 
 public class Baseball : Ball {
     public int stitches = 0;
 }
 
-public class SoccerBall : Ball {
-    public int panels = 0;
+public class Football : Ball {
+    # default shape of 'sphere' is overriden here
+    public override string shape = 'oval';
+    public string material = "leather";
 }
 ```
