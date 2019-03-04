@@ -11,7 +11,7 @@ The four principles of object-oriented programming are encapsulation, abstractio
 1. [Inheritance](./chapters/INHERITANCE.md)
 1. [Polymorphism](./chapters/POLYMORPHISM.md)
 
-[Medium articla on OOP](https://medium.freecodecamp.org/object-oriented-programming-concepts-21bb035f7260)
+[Medium article on OOP](https://medium.freecodecamp.org/object-oriented-programming-concepts-21bb035f7260)
 
 ## SOLID Principles
 
