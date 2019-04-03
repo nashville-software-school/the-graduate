@@ -13,3 +13,4 @@ It's important to keep your coding skills sharp - we covered *a lot* in a short 
 [Markdown Cheatsheet](https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md)
 7. [Advice from a hiring manager](https://blog.usejournal.com/advice-from-a-hiring-manager-to-a-code-bootcamp-graduate-4d1036a7fa78)
 1. [Tips from a bootcamp grad](https://medium.freecodecamp.org/5-key-learnings-from-the-post-bootcamp-job-search-9a07468d2331)
+1. Do Lexscopistan! This is a fun vanilla JS exercise to practice scope (differen kinds of scope, as well as nested scope) [Lexscopistan Repo](https://github.com/nashville-software-school/lexscopistan)
