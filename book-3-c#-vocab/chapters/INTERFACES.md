@@ -54,6 +54,7 @@ Let's create a Mother's day and a birthday interface
 public interface IMothersDay
 {
     string ArrangementName {get; set;}
+    string Name { get; set; }
 
     // note: method logic does not go in the interface itself. You can define methods here, but create the logic in another class (see Rose and Sunflower classes below).
     void TrimStems();
@@ -70,7 +71,7 @@ Now our classes are going to implement the appropriate interface, based on which
 ```cs
 public class Rose : IMothersDay
 {
-    public string Name {get; set;}
+    public string Name {get; set;} = "Rose";
     public bool Thorny {get; set; } = true;
     public string ArrangementName {get; set;}  = "Mother's Day";
 
@@ -89,7 +90,7 @@ public class Rose : IMothersDay
 
 public class Sunflower : IMothersDay
 {
-    public string Name {get; set;}
+    public string Name {get; set;} = "Sunflower";
     public bool Seeds {get; set;} = true;
     public string ArrangementName {get; set;}  = "Mother's Day";
 
@@ -117,7 +118,7 @@ public class Lily : IBirthday
 You could then create some instances of each of these flowers and add them to an arrangement list.
 
 ```cs
-// when you create a new instance of a flower, it will have two types: type of flower and type of arrangement interface
+ // when you create a new instance of a flower, it will have two types: type of flower and type of arrangement interface
 
 // Type: Rose, Interface: IMothersDay
 Rose pinkRose = new Rose();
@@ -134,10 +135,18 @@ List<IMothersDay> mothersdayFlowers = new List<IMothersDay>(){
     yellowSunflower
 };
 
+// Thorny is a property on the Rose class, and is not on the IMothersDay interface, which means that you can only access its value on the class itself.
+Console.WriteLine(pinkRose.Thorny);
+
+// Because Name is a property on the IMothersDay interface, we can access the Name value from the interface
+mothersdayFlowers.ForEach(flower => Console.WriteLine($"The {flower.Name} is in the Mother's Day arrangement"));
+
 List<IBirthday> birthdayFlowers = new List<IBirthday>(){
     blueHydrangea,
     whiteLily
-}
+};
+
+mothersdayFlowers.ForEach(flower => Console.WriteLine($"The {flower.Name} is in the birthday arrangement"));
 
 // calling some of the methods from the Rose class, Sunflower Class, and IMothersday interface 
 pinkRose.TrimStems();
@@ -146,6 +155,6 @@ pinkRose.removeThorns();
 
 // or, if you want to trim all of the stems in a specific list, you can simply foreach over the list of mothersdayFlowers and call that method
 mothersdayFlowers.ForEach(flower => flower.TrimStems());
-
-
 ```
+
+[View full code example here.](https://github.com/kimberly-bird/csharp-interfaces-example)
