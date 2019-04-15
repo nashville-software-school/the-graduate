@@ -2,6 +2,7 @@
 
 [C# NSS Chapter](https://github.com/nashville-software-school/bangazon-inc/blob/cohort-30/book-1-orientation/chapters/INTERFACES_INTRO.md)  (with lots of other great resources linked)
 
+[View full code example here.](https://github.com/kimberly-bird/csharp-interfaces-example)
 
 An interface in C# is a construct that you define for classes to implement. Think of it as a contract for a class. You can define methods and properties in an interface, and any class that implements that interface must "follow" those rules in the interface. If a class implements an interface, then it must define a method, property, or event for each one defined in the interface.
 
@@ -52,7 +53,7 @@ Let's create a Mother's day and a birthday interface
 ```cs
 public interface IMothersDay
 {
-    public string ArrangementName {get; set;}
+    string ArrangementName {get; set;}
 
     // note: method logic does not go in the interface itself. You can define methods here, but create the logic in another class (see Rose and Sunflower classes below).
     void TrimStems();
@@ -60,7 +61,7 @@ public interface IMothersDay
 
 public interface IBirthday 
 {
-    public string ArrangementName {get; set;}
+    string ArrangementName {get; set;}
 }
 ```
 
@@ -70,13 +71,13 @@ Now our classes are going to implement the appropriate interface, based on which
 public class Rose : IMothersDay
 {
     public string Name {get; set;}
-    public bool Thorny {get; set; } = True;
+    public bool Thorny {get; set; } = true;
     public string ArrangementName {get; set;}  = "Mother's Day";
 
     // this is a method that is unique to a rose
     public void removeThorns()
     {
-        Thorny = False;
+        Thorny = false;
     }
 
     // this method must be implemented in some way in the Rose class because Rose is using the IMothersday interface, which has defined a TrimStems() method. 
@@ -89,7 +90,7 @@ public class Rose : IMothersDay
 public class Sunflower : IMothersDay
 {
     public string Name {get; set;}
-    public bool Seeds {get; set;} = True;
+    public bool Seeds {get; set;} = true;
     public string ArrangementName {get; set;}  = "Mother's Day";
 
     // notice how this method also implements the TrimStems() method, but the Console.WriteLine is different from Rose. The logic can be different for each class's "version" of the TrimStems() method.
@@ -129,13 +130,13 @@ Lily whiteLily = new Lily();
 
 // This is a list that contains 2 types (Rose and Sunflower) because they both have the same interface of IMothersDay
 List<IMothersDay> mothersdayFlowers = new List<IMothersDay>(){
-    Rose,
-    Sunflower
+    pinkRose,
+    yellowSunflower
 };
 
 List<IBirthday> birthdayFlowers = new List<IBirthday>(){
-    Hydrangea,
-    Lily
+    blueHydrangea,
+    whiteLily
 }
 
 // calling some of the methods from the Rose class, Sunflower Class, and IMothersday interface 
